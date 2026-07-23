@@ -37,7 +37,7 @@ class Bond(Asset):
         self.yieldamt = yieldamt
 
     def __str__(self):
-        return f"{self.description} with a duration of {self.duration},yield amt of {self.yieldamt} and price of {self.price}"
+        return f"{self.description} with a duration of {self.duration}'yr',yield amt of {self.yieldamt}% and price of ${self.price}"
     
     def __lt__(self,other):
         return self.yieldamt < other.yieldamt
